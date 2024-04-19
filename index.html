@@ -26,14 +26,20 @@
     <main>
         <section class="container_custom text-start py-3">
             <div class="input-group mb-3">
-                <span class="input-group-text">Chilometri destinazione</span>
-                <input type="text" class="form-control" id="destination">
+                <span class="input-group-text">Seleziona destinazione</span>
+                <select class="form-select" id="destination">
+                    <option selected disabled value="">seleziona</option>
+                    <option value="250">Firenze</option>
+                    <option value="100">Ancona</option>
+                    <option value="180">Bologna</option>
+                    <option value="40">Rimini</option>
+                </select>
             </div>
             <div class="input-group mb-3">
                 <span class="input-group-text">Età</span>
                 <input type="text" class="form-control" id="age">
             </div>
-            <div class="border border-light rounded p-2 d-flex flex-column align-items-center">
+            <div class="result border border-light rounded p-2 d-flex flex-column align-items-center">
                 <button id="price" href="" class="btn">clicca quì per scoprire il prezzo</button>
                 <div id="costo-totale"></div>
             </div>
